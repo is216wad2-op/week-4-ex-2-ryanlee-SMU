@@ -10,6 +10,12 @@
         }
 
         /* add CSS code here */
+        #div2 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: goldenrod;
+        }
 
     </style>
 
@@ -27,12 +33,18 @@
         
        // add code here
         function changeShape(){
-            var shape = document.getElementById("div1")
-            if(shape.style.borderRadius == ""){
-                shape.style.borderRadius = "50%"
+            
+            var shape = document.getElementsByTagName("div")[0]
+            if(shape.id != "div2"){
+                shape.id = "div2"
             } else{
-                shape.style.borderRadius = ""
+                shape.id = "div1"
             }
+            // if(shape.style.borderRadius == ""){
+            //     shape.style.borderRadius = "50%"
+            // } else{
+            //     shape.style.borderRadius = ""
+            // }
        }
 
     </script>
